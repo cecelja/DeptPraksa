@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Task1 {
+	
+	public static void main(String[] args) {
+		//Dani niz podataka
+		int[] niz = new int[]{1,3,1,7,5,6,6,7,4,2};
+		
+		//Izracunaj sumu cijelog niza
+		int zbroj = 0;
+		for (int i = 0; i < niz.length; i++) {
+			zbroj += niz[i];
+		}
+		
+		
+		//Provjeri dal je ukupna suma djeljiva sa 3
+		if (zbroj % 3 == 0) {
+			//Postavi si kao cilj da postignes sumu od zbroj/3
+			int bound = zbroj / 3;
+			
+			int currentSum = 0;
+			for (int j = 0; j < niz.length; j++) {
+				if (currentSum <= bound) {
+					currentSum += niz[j];
+				} else if (currentSum == bound) {
+					
+				}
+			}
+		}	
+	}
+
+}

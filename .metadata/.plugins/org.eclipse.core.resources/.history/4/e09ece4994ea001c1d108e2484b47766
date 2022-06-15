@@ -1,0 +1,41 @@
+package hr.filip.cecelja.interview;
+
+public class BonusTask {
+	
+	public static void main(String[] args) {
+		
+		int n = 7;
+		int n2 = n;
+		int razlika = 0;
+		int index = 0;
+		for (int i = 1; i < n; i = i + 2) {
+			index++;
+		}
+		
+//		System.out.println(index);
+		
+		for (int j = 0; j < n - index; j++) {
+			for (int k = 0; k < n; k++) {
+				if (k == n/2) {
+					System.out.print(n2);
+				} else {
+					if (k >= n/2 - j && k <= n/2 + j) {
+						if (k >= n/2 - j && k < n/2) {
+							System.out.print(razlika + ",");
+							razlika++;
+						} else if (k > n/2 && k <= n/2 + j) {
+							System.out.print(--razlika);
+						}
+					} else {
+						System.out.print(" ");
+					}
+				}
+			}
+			System.out.println();
+			n2--;
+			razlika = n - 2 * (j + 1);
+		}
+		
+	}
+
+}

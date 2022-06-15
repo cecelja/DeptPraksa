@@ -1,0 +1,22 @@
+package hr.filip.cecelja.interview;
+
+public class Task2 {
+	
+	public static void main(String[] args) {
+		
+		int length  = 5;
+		int n2 = 1;
+		int n3 = length;
+		
+		for(int i = 0; i < length; i++) {
+			for (int j = 0; j < n2; j++) {
+				System.out.print(n3);
+			}
+			System.out.println();
+			n2++;
+			n3--;
+		}
+		
+	}
+
+}
